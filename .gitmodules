@@ -232,6 +232,9 @@
 [submodule "zsh/plugins/zsh-completions"]
 	path = zsh/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
+[submodule "zsh/plugins/zsh-autosuggestions"]
+	path = zsh/plugins/zsh-autosuggestions
+	url = https://github.com/zsh-users/zsh-autosuggestions
 [submodule "irssi/scripts/vendor/irssi-smartfilter"]
 	path = irssi/scripts/vendor/irssi-smartfilter
 	url = https://github.com/lifeforms/irssi-smartfilter
@@ -262,3 +265,6 @@
 [submodule "emacs.d/vendor/company-quickhelp"]
 	path = emacs.d/vendor/company-quickhelp
 	url = https://github.com/company-mode/company-quickhelp
+[submodule "zsh/plugins/zsh-vi-mode"]
+	path = zsh/plugins/zsh-vi-mode
+	url = https://github.com/jeffreytse/zsh-vi-mode.git

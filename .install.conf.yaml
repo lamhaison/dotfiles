@@ -17,6 +17,7 @@
     ~/.emacs.d:
     ~/.emacs:
     ~/.gitconfig:
+    ~/.gitmessage.txt:
     ~/.gitignore_global:
     ~/.gnupg/gpg.conf:
     ~/.haskeline:

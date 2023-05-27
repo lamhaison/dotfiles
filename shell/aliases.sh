@@ -48,8 +48,7 @@ jump() {
 }
 
 # cd replacement for screen to track cwd (like tmux)
-scr_cd()
-{
+scr_cd() {
     builtin cd $1
     screen -X chdir "$PWD"
 }
@@ -59,8 +58,7 @@ if [[ -n $STY ]]; then
 fi
 
 # Go up [n] directories
-up()
-{
+up() {
     local cdir="$(pwd)"
     if [[ "${1}" == "" ]]; then
         cdir="$(dirname "${cdir}")"
@@ -69,7 +67,7 @@ up()
     elif ! [[ "${1}" -gt "0" ]]; then
         echo "Error: argument must be positive"
     else
-        for ((i=0; i<${1}; i++)); do
+        for ((i = 0; i < ${1}; i++)); do
             local ncdir="$(dirname "${cdir}")"
             if [[ "${cdir}" == "${ncdir}" ]]; then
                 break
@@ -96,7 +94,7 @@ nonascii() {
 # Fetch pull request
 
 fpr() {
-    if ! git rev-parse --git-dir > /dev/null 2>&1; then
+    if ! git rev-parse --git-dir >/dev/null 2>&1; then
         echo "error: fpr must be executed from within a git repository"
         return 1
     fi
@@ -134,3 +132,8 @@ alias mirrorsite='wget -m -k -K -E -e robots=off'
 
 # Mirror stdout to stderr, useful for seeing data going through a pipe
 alias peek='tee >(cat 1>&2)'
+
+alias pip=pip3
+
+# TODO Later (Can not alias for this one)
+# alias python=/usr/bin/python3

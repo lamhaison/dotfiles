@@ -4,6 +4,14 @@
 
 source ~/.zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
+# zsh-autosuggestions
+source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+
+# zsh-vi-mode (it has been disabled color when typing fi enable it)
+source ~/.zsh/plugins/zsh-vi-mode/zsh-vi-mode.zsh
+
+
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 
 if [[ "$(tput colors)" == "256" ]]; then
@@ -35,3 +43,5 @@ fi
 if [[ "$(tput colors)" == "256" ]]; then
     eval $(dircolors =(cat ~/.shell/plugins/dircolors-solarized/dircolors.256dark ~/.shell/dircolors.extra))
 fi
+
+plugins=(git)
