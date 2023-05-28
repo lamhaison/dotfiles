@@ -11,6 +11,9 @@ source ~/.zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 # zsh-vi-mode (it has been disabled color when typing fi enable it)
 source ~/.zsh/plugins/zsh-vi-mode/zsh-vi-mode.zsh
 
+# fast-syntax-highlighting
+source ~/.zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh
+
 
 ZSH_HIGHLIGHT_HIGHLIGHTERS=(main brackets pattern)
 
