@@ -7,9 +7,9 @@ alias ll='ls -lah'
 alias la='ls -A'
 alias l='ls'
 
-# Aliases to protect against overwriting
-alias cp='cp -i'
-alias mv='mv -i'
+# Aliases to protect against overwriting (Don't need that alias)
+# alias cp='cp -i'
+# alias mv='mv -i'
 
 # git related aliases
 alias gag='git exec ag'
