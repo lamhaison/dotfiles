@@ -49,6 +49,7 @@
 	staash = stash --include-untracked
 	update-submodules = submodule update --init --recursive
 	upgrade-submodules = submodule update --init --remote
+	rms = "!f(){ git rm --cached \"$1\";rm -r \"$1\";git config -f .gitmodules --remove-section \"submodule.$1\";git config -f .git/config --remove-section \"submodule.$1\";git add .gitmodules; }; f"
 	empty-tree-hash = hash-object -t tree /dev/null
 	root = rev-parse --show-toplevel
 	ctags = ! "ctg() { trap \"rm -f .git/tags.$$\" EXIT; ctags --tag-relative -Rf.git/tags.$$ --exclude=.git; mv .git/tags.$$ .git/tags; }; ctg"
