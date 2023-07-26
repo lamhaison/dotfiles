@@ -135,5 +135,9 @@ alias peek='tee >(cat 1>&2)'
 
 alias pip=pip3
 
+eval $(thefuck --alias)
+# You can use whatever you want as an alias, like for Mondays:
+eval $(thefuck --alias fuck)
+
 # TODO Later (Can not alias for this one)
 # alias python=/usr/bin/python3
